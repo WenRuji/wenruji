@@ -1,0 +1,11 @@
+# rustfmt.toml
+
+# Maximum width of a line, in characters
+max_width = 100
+
+# Controls indentation
+tab_spaces = 3
+use_small_heuristics = "Max"  # Adjusts formatting for shorter items in a single line if possible
+
+# Where to place function parameters and arguments (over multiple lines)
+fn_params_layout = "Tall"  # Choices: "Compressed", "Tall", "Block"

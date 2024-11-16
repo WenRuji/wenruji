@@ -1,0 +1,15 @@
+[package]
+name = "wenruji-rs"
+version = "0.0.1"
+edition = { workspace = true }
+authors = ["wenruji.fun <wenruji.fun@gmail.com>"]
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cosmwasm-schema = { workspace = true }
+cw-utils = { workspace = true }
+cosmwasm-std = { workspace = true }
+thiserror = { workspace = true }
+cw-storage-plus = { workspace = true }
