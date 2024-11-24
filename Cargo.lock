@@ -308,7 +308,7 @@ dependencies = [
 
 [[package]]
 name = "crack-the-vault"
-version = "0.1.0-rc1"
+version = "0.1.1-rc1"
 dependencies = [
  "anyhow",
  "cosmwasm-schema",

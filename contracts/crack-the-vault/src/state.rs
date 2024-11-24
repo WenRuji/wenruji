@@ -133,7 +133,6 @@ pub fn execute_restart(
    }
    ACCOUNTS.clear(storage);
    REF_WEIGHTS.clear(storage);
-   REWARDS.clear(storage);
    DECAY_GAME.remove(storage);
    let start_time = now.plus_seconds(config.game_delay);
    let decay_game = DecayGame::new(start_time, start_time.plus_seconds(config.duration_seconds));
@@ -180,6 +179,7 @@ pub fn execute_post_swap(
       fee_split[3].1.clone(),
    )?);
 
+   REWARDS.clear(storage);
    Ok(response)
 }
 
